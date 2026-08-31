@@ -1,4 +1,4 @@
-import { ArrowDownRight, ArrowUpRight, BookOpen, Code2, Dna, GraduationCap, Mail, MapPin } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight, BookOpen, Dna, GraduationCap, MapPin } from 'lucide-react';
 
 const publications = [
   { index: '[1]', venue: 'Cell · 2026', title: 'Human acrocentric chromosome short-arm de novo mutation and recombination', authors: <><strong>Lin J.</strong>, Mastrorosa F. K., Noyes M. D., Yoo D., Rhie A., Porubsky D., … &amp; Eichler E. E.*</>, href: 'https://scholar.google.com/citations?user=YeX_MDwAAAAJ&hl=en' },
@@ -30,13 +30,13 @@ export default function Home() {
       </div>
       <aside className="profile-card" aria-label="Profile summary">
         <div className="portrait-wrap"><img src="/jdlin.jpg" alt="Jiadong Lin with his daughter in front of blooming roses" className="portrait" /></div>
-        <div className="profile-body"><p className="kicker">Current appointment</p><h2>Postdoctoral Fellow</h2><p>Department of Genome Sciences<br />University of Washington</p><div className="profile-links"><a href="https://github.com/jiadong324" aria-label="GitHub profile"><Code2 size={18} /></a><a href="mailto:jdlin@uw.edu" aria-label="Email Jiadong Lin"><Mail size={18} /></a></div></div>
+        <div className="profile-body"><p className="kicker">Current appointment</p><h2>Postdoctoral Fellow</h2><p>Department of Genome Sciences<br />University of Washington</p></div>
       </aside>
     </section>
     <section className="ticker" aria-label="Research themes"><div>Structural variation <Dna size={20} /> Long-read sequencing <Dna size={20} /> Pangenomics <Dna size={20} /> Machine-learning models</div></section>
     <section className="section shell research" id="research">
       <div className="section-label"><span>01</span> Research</div>
-      <div className="section-content two-col"><div><p className="kicker">What I study</p><h2>Making the hidden genome <em>visible.</em></h2></div><div className="research-copy"><p>My work sits at the intersection of algorithm design, human genetics, long-read sequencing, and multi-omics. I build computational tools and machine-learning models that reveal how genome structure shapes molecular and cellular states.</p><div className="focus-grid"><div><strong>01</strong><h3>Haplotype-resolved multi-omics</h3><p>Machine-learning models for haplotype-resolved multi-omics.</p></div><div><strong>02</strong><h3>Structure-conditioned functional models</h3><p>Linking genome structure to molecular and cellular states.</p></div><div><strong>03</strong><h3>Complex structural variation</h3><p>Scalable detection and representation of complex structural variations.</p></div><div><strong>04</strong><h3>Robust variant detection</h3><p>Efficient structural variant detection under sparse and mixed data.</p></div></div></div></div>
+      <div className="section-content two-col"><div><p className="kicker">What I study</p><h2>Making the hidden genome <em>visible.</em></h2></div><div className="research-copy"><p>My work sits at the intersection of algorithm design, human genetics, long-read sequencing, and multi-omics. I build computational tools and machine-learning models that reveal how genome structure shapes molecular and cellular states.</p><div className="focus-grid"><div><strong>01</strong><h3>Haplotype-resolved multi-omics</h3><p>Machine-learning models for haplotype-resolved multi-omics.</p></div><div><strong>02</strong><h3>Structure-conditioned functional models</h3><p>Linking genome structure to molecular and cellular states.</p></div><div><strong>03</strong><h3>Structural variant detection</h3><p>Scalable detection of structural variants and robust detection under sparse and mixed data.</p></div><div><strong>04</strong><h3>Disease genomes</h3><p>Understanding the role of inherited complex variations in disease.</p></div></div></div></div>
     </section>
     <section className="section publications" id="publications"><div className="shell">
       <div className="section-label"><span>02</span> Selected publications</div>
