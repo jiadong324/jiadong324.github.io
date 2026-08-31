@@ -2,7 +2,7 @@ import { ArrowDownRight, ArrowUpRight, BookOpen, Code2, Dna, GraduationCap, Mail
 
 const publications = [
   { index: '[1]', venue: 'Cell · 2026', title: 'Human acrocentric chromosome short-arm de novo mutation and recombination', authors: <><strong>Lin J.</strong>, Mastrorosa F. K., Noyes M. D., Yoo D., Rhie A., Porubsky D., … &amp; Eichler E. E.*</>, href: 'https://scholar.google.com/citations?user=YeX_MDwAAAAJ&hl=en' },
-  { index: '[2]', venue: 'Nature · 2026 · Under review', title: 'A high-resolution human pangenome structural variant resource for improved disease association', authors: <><strong>Lin J.</strong>, Gustafson J. A., Wertz J., Sui Y., Yoo D., Porubsky D., Luo C., Wong I., Garimella K. V., … &amp; Eichler E. E.*</>, href: 'https://scholar.google.com/citations?user=YeX_MDwAAAAJ&hl=en' },
+  { index: '[2]', venue: 'medRxiv · 2026 · Under review', title: 'A high-resolution human pangenome structural variant resource for improved disease association', authors: <><strong>Lin J.</strong>, Gustafson J. A., Wertz J., Sui Y., Yoo D., Porubsky D., Luo C., Wong I., Garimella K. V., … &amp; Eichler E. E.*</>, href: 'https://scholar.google.com/citations?user=YeX_MDwAAAAJ&hl=en' },
   { index: '[3]', venue: 'Nature Methods · 2022', title: 'SVision: a deep learning approach to resolve complex structural variants', authors: <><strong>Lin J.</strong>, Wang S., Audano P. A., Meng D., Flores J. I., Kosters W., Yang X., Jia P., Marschall T., Beck C. R., Ye K.*</>, href: 'https://www.nature.com/articles/s41592-022-01609-w' },
   { index: '[4]', venue: 'Briefings in Bioinformatics · 2023', title: 'Comparison and benchmark of structural variants detected from long read and long read assembly', authors: <><strong>Lin J.</strong>, Jia P., Wang S., Kosters W., Ye K.*</>, href: 'https://scholar.google.com/citations?user=YeX_MDwAAAAJ&hl=en' },
   { index: '[5]', venue: 'Genomics, Proteomics & Bioinformatics · 2022', title: 'Mako: A Graph-based Pattern Growth Approach to Detect Complex Structural Variants', authors: <><strong>Lin J.</strong>, Yang X., Kosters W., Xu T., Jia Y., Wang S., Zhu Q., Ryan M., Guo L., Zhang C., Lee C., … &amp; Ye K.*</>, href: 'https://scholar.google.com/citations?user=YeX_MDwAAAAJ&hl=en' },
@@ -21,7 +21,6 @@ export default function Home() {
     <nav className="nav shell" aria-label="Main navigation">
       <span aria-hidden="true" />
       <div className="nav-links"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#software">Software</a></div>
-      <a className="nav-contact" href="mailto:jdlin@uw.edu">Get in touch <ArrowUpRight size={15} /></a>
     </nav>
     <section className="hero shell" id="top">
       <div className="hero-copy">
@@ -31,7 +30,7 @@ export default function Home() {
       </div>
       <aside className="profile-card" aria-label="Profile summary">
         <div className="portrait-wrap"><img src="/jdlin.jpg" alt="Jiadong Lin with his daughter in front of blooming roses" className="portrait" /></div>
-        <div className="profile-body"><p className="kicker">Current appointment</p><h2>Postdoctoral Fellow</h2><p>Department of Genome Sciences<br />University of Washington</p><div className="profile-links"><a href="https://github.com/jiadong324" aria-label="GitHub profile"><Code2 size={18} /></a><a href="https://orcid.org/0000-0002-8116-5901" aria-label="ORCID profile" className="orcid">iD</a><a href="mailto:jdlin@uw.edu" aria-label="Email Jiadong Lin"><Mail size={18} /></a></div></div>
+        <div className="profile-body"><p className="kicker">Current appointment</p><h2>Postdoctoral Fellow</h2><p>Department of Genome Sciences<br />University of Washington</p><div className="profile-links"><a href="https://github.com/jiadong324" aria-label="GitHub profile"><Code2 size={18} /></a><a href="mailto:jdlin@uw.edu" aria-label="Email Jiadong Lin"><Mail size={18} /></a></div></div>
       </aside>
     </section>
     <section className="ticker" aria-label="Research themes"><div>Structural variation <Dna size={20} /> Long-read sequencing <Dna size={20} /> Pangenomics <Dna size={20} /> Machine-learning models</div></section>
@@ -45,9 +44,9 @@ export default function Home() {
       <div className="publication-list">{publications.map((publication) => <a className="publication-row" href={publication.href} key={publication.title}><div className="pub-year">{publication.index}</div><div className="pub-copy"><span>{publication.venue}</span><h3>{publication.title}</h3><p>{publication.authors}</p></div><ArrowUpRight className="pub-arrow" size={22} /></a>)}</div>
     </div></section>
     <section className="section shell" id="software">
-      <div className="section-label"><span>03</span> Open-source software</div><div className="software-heading"><h2>Tools built for <em>discovery.</em></h2><p>Research software and reproducible workflows for the genomics community.</p></div>
+      <div className="section-label"><span>03</span> Open-source software</div><div className="software-heading"><h2>Tools built for <em>discovery.</em></h2><p>Research software and reproducible workflows for the genomics community.<br /><a className="inline-link" href="https://github.com/jiadong324">View all GitHub repositories <ArrowUpRight size={14} /></a></p></div>
       <div className="project-grid">{projects.map((project) => <a className="project-card" href={project.href} key={project.name}><div className="project-top"><span className="project-mark">{project.mark}</span><ArrowUpRight size={20} /></div><h3>{project.name}</h3><p>{project.description}</p><span className="project-meta">{project.meta}</span></a>)}</div>
     </section>
-    <section className="credentials shell"><div className="credential"><GraduationCap size={21} /><div><span>Dual Ph.D.</span><strong>Xi&apos;an Jiaotong University · Leiden University</strong></div></div><div className="credential"><MapPin size={21} /><div><span>Based in</span><strong>Seattle, Washington</strong></div></div><div className="credential"><BookOpen size={21} /><div><span>Affiliation</span><strong>Eichler Lab · UW Genome Sciences</strong></div></div></section>
+    <section className="credentials shell"><div className="credential"><GraduationCap size={21} /><div><span>Dual Ph.D.</span><strong>Xi&apos;an Jiaotong University · Leiden University</strong></div></div><div className="credential"><MapPin size={21} /><div><span>Based in</span><strong>Seattle, Washington</strong></div></div><div className="credential"><BookOpen size={21} /><div><span>Affiliation</span><a href="https://eichler.gs.washington.edu/"><strong>Eichler Lab · UW Genome Sciences</strong></a></div></div></section>
   </main>;
 }

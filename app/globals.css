@@ -13,3 +13,8 @@ footer{padding-top:65px}.footer-inner{display:flex;justify-content:flex-end}.foo
 .ticker{font-size:14px;padding-block:19px}.ticker div{gap:36px}.publications{background:var(--paper);color:var(--ink)}.publications .section-label{color:var(--muted)}.publication-heading h2,.software-heading h2{font-size:clamp(40px,4.5vw,60px)}.publication-list{border-top-color:var(--line)}.publication-row{border-bottom-color:var(--line)}.publication-row:hover{color:var(--accent)}.pub-year,.pub-copy p{color:var(--muted)}.pub-copy p strong{color:var(--ink)}.credentials{margin-bottom:80px}
 
 @media(max-width:800px){.ticker{font-size:12px}.ticker div{gap:22px}.publication-heading h2,.software-heading h2{font-size:clamp(36px,11vw,48px)}}
+
+/* Tighter section rhythm and stronger wayfinding */
+.section{padding-block:76px}.section-label{font-size:17px;margin-bottom:42px}.publication-list{margin-top:38px}.project-grid{margin-top:42px}.credentials{margin-bottom:48px}.software-heading .inline-link{display:inline-flex;align-items:center;gap:5px;margin-top:10px;color:var(--ink);font:700 13px var(--sans);border-bottom:1px solid currentColor;padding-bottom:3px}.credential a{border-bottom:1px solid transparent}.credential a:hover{color:var(--accent);border-bottom-color:currentColor}
+
+@media(max-width:800px){.section{padding-block:58px}.section-label{font-size:14px;margin-bottom:32px}}
