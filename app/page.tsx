@@ -15,7 +15,7 @@ const projects = [
 export default function Home() {
   return <main>
     <nav className="nav shell" aria-label="Main navigation">
-      <a className="monogram" href="#top" aria-label="Jiadong Lin — home">JL<span>.</span></a>
+      <span aria-hidden="true" />
       <div className="nav-links"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#software">Software</a></div>
       <a className="nav-contact" href="mailto:jdlin@uw.edu">Get in touch <ArrowUpRight size={15} /></a>
     </nav>
@@ -23,18 +23,18 @@ export default function Home() {
       <div className="hero-copy">
         <div className="eyebrow"><span /> Computational genomics · Seattle, WA</div>
         <h1>Jiadong<br /><em>Lin</em></h1>
-        <p className="lede">I develop algorithms to reveal structural variation in the human genome—especially in regions that are complex, diverse, and difficult to map.</p>
+        <p className="lede">I develop computational tools and machine-learning models to reveal structural variation and connect genome structure with molecular and cellular states.</p>
         <div className="hero-actions"><a className="button primary" href="#publications">Explore my work <ArrowDownRight size={17} /></a><a className="text-link" href="https://scholar.google.com/citations?user=YeX_MDwAAAAJ&hl=en">Google Scholar <ArrowUpRight size={15} /></a></div>
       </div>
       <aside className="profile-card" aria-label="Profile summary">
-        <div className="portrait-wrap"><img src="https://avatars.githubusercontent.com/u/15797884?v=4" alt="Jiadong Lin" className="portrait" /><span className="available">Open to collaboration</span></div>
+        <div className="portrait-wrap"><img src="/jdlin.jpg" alt="Jiadong Lin with his daughter in front of blooming roses" className="portrait" /><span className="available">Open to collaboration</span></div>
         <div className="profile-body"><p className="kicker">Current appointment</p><h2>Postdoctoral Fellow</h2><p>Department of Genome Sciences<br />University of Washington</p><div className="profile-links"><a href="https://github.com/jiadong324" aria-label="GitHub profile"><Code2 size={18} /></a><a href="https://orcid.org/0000-0002-8116-5901" aria-label="ORCID profile" className="orcid">iD</a><a href="mailto:jdlin@uw.edu" aria-label="Email Jiadong Lin"><Mail size={18} /></a></div></div>
       </aside>
     </section>
     <section className="ticker" aria-label="Research themes"><div>Structural variation <Dna size={18} /> Long-read sequencing <Dna size={18} /> Pangenomics <Dna size={18} /> Human genetics</div></section>
     <section className="section shell research" id="research">
       <div className="section-label"><span>01</span> Research</div>
-      <div className="section-content two-col"><div><p className="kicker">What I study</p><h2>Making the hidden genome <em>visible.</em></h2></div><div className="research-copy"><p>My work sits at the intersection of algorithm design, human genetics, and long-read sequencing. I build computational methods that help us observe variation missed by conventional references and short-read technologies.</p><div className="focus-grid"><div><strong>01</strong><h3>Variant discovery</h3><p>Detecting complex and population-scale structural variation.</p></div><div><strong>02</strong><h3>Pangenome methods</h3><p>Using diverse references to recover previously hidden variation.</p></div><div><strong>03</strong><h3>Genome informatics</h3><p>Turning long-read data into robust, reproducible resources.</p></div></div></div></div>
+      <div className="section-content two-col"><div><p className="kicker">What I study</p><h2>Making the hidden genome <em>visible.</em></h2></div><div className="research-copy"><p>My work sits at the intersection of algorithm design, human genetics, long-read sequencing, and multi-omics. I build computational tools and machine-learning models that reveal how genome structure shapes molecular and cellular states.</p><div className="focus-grid"><div><strong>01</strong><h3>Haplotype-resolved multi-omics</h3><p>Machine-learning models for haplotype-resolved multi-omics.</p></div><div><strong>02</strong><h3>Structure-conditioned functional models</h3><p>Linking genome structure to molecular and cellular states.</p></div><div><strong>03</strong><h3>Complex structural variation</h3><p>Scalable detection and representation of complex structural variations.</p></div><div><strong>04</strong><h3>Robust variant detection</h3><p>Efficient structural variant detection under sparse and mixed data.</p></div></div></div></div>
     </section>
     <section className="section publications" id="publications"><div className="shell">
       <div className="section-label"><span>02</span> Selected publications</div>
